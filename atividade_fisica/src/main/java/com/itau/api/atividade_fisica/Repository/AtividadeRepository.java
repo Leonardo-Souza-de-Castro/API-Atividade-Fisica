@@ -1,6 +1,5 @@
 package com.itau.api.atividade_fisica.Repository;
 
-import com.itau.api.atividade_fisica.DTO.ListarDTO;
 import com.itau.api.atividade_fisica.Entity.Atividade;
 import org.springframework.data.jpa.repository.JpaRepository;
 

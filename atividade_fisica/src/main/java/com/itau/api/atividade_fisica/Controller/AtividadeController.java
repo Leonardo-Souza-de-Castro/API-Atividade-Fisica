@@ -3,7 +3,6 @@ package com.itau.api.atividade_fisica.Controller;
 import com.itau.api.atividade_fisica.DTO.CadastroDTO;
 import com.itau.api.atividade_fisica.DTO.ListarDTO;
 import com.itau.api.atividade_fisica.DTO.RespostaCadastroDTO;
-import com.itau.api.atividade_fisica.Entity.Atividade;
 import com.itau.api.atividade_fisica.Service.AtividadeService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
