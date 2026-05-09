@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import jakarta.persistence.Id;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "atividades")
@@ -14,17 +14,16 @@ import java.util.Date;
 public class Atividade {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long IdAtividade;
+    private Long idAtividade;
 
-    @Column(length = 9, nullable = false, name = "funcional")
-    private String Funcional;
+    @Column(length = 9, nullable = false)
+    private String funcional;
 
-    @Column(length = 150, nullable = false, name = "codigoAtividade")
-    private String CodigoAtividade;
+    @Column(length = 150, nullable = false)
+    private String codigoAtividade;
 
-    @Column(length = 300, name = "descricaoAtividade")
-    private String DescricaoAtividade;
+    @Column(length = 300)
+    private String descricaoAtividade;
 
-    @Column(name = "dataCriacao")
-    private Date dataCriacao;
+    private LocalDateTime dataCriacao = LocalDateTime.now();
 }
