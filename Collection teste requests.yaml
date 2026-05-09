@@ -1,0 +1,134 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1762650785962
+  modified: 1762650785962
+  description: ""
+collection:
+  - name: projeto biblioteca
+    meta:
+      id: fld_12a36ae4d3a749d5899e6abdefba8525
+      created: 1776995330831
+      modified: 1776995330831
+      sortKey: -1776995330832
+      description: ""
+  - name: Atividades Fisicas
+    meta:
+      id: fld_30d016617f5d42bd9fcdcd334769605f
+      created: 1778356972387
+      modified: 1778366617933
+      sortKey: -1778356972387
+      description: ""
+    children:
+      - url: http://localhost:8080/atividades
+        name: Cadastro de atividades
+        meta:
+          id: req_b4fc9802cf704fe697b0cfdedea478c5
+          created: 1778356980082
+          modified: 1778366451037
+          isPrivate: false
+          description: ""
+          sortKey: -1778356980082
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "funcional": "123456789",
+              "dataHora": "2025-09-24T07:30:00",
+              "codigo_Atividade": "a",
+              "descricaoAtividade": "Corrida de 5km"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/atividades
+        name: Listar Todas
+        meta:
+          id: req_9ea5c6d5f1b941e1af6ea6b4578d8d8d
+          created: 1778358723808
+          modified: 1778361894103
+          isPrivate: false
+          description: ""
+          sortKey: -1778358723808
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/atividades/987654321
+        name: Listar por funcional
+        meta:
+          id: req_5618e66dfbe843aba18017e74e43bf0b
+          created: 1778358900551
+          modified: 1778362088267
+          isPrivate: false
+          description: ""
+          sortKey: -1778358900551
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1762650812255
+    modified: 1762742991205
+  cookies:
+    - id: 19e4536c-ddc4-404a-91e7-38aa565c51d8
+      key: ARRAffinity
+      value: 92ca53ad8db4fbb93d4d3b7d8ab54dcf8ffecb2d731f25b0e91ad575d7534c3f
+      domain: geoturismoapi-a6gph0hxejhad5hr.canadacentral-01.azurewebsites.net
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+    - id: 512bc1b2-af52-460f-91df-e9d2c68b24af
+      key: ARRAffinitySameSite
+      value: 92ca53ad8db4fbb93d4d3b7d8ab54dcf8ffecb2d731f25b0e91ad575d7534c3f
+      domain: geoturismoapi-a6gph0hxejhad5hr.canadacentral-01.azurewebsites.net
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1762650812251
+    modified: 1762650812251
+    isPrivate: false
